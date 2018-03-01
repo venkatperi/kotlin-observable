@@ -14,11 +14,14 @@ defaultTasks 'run'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     testCompile 'junit:junit:4.12'
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
-    compile project(':kotlin-core')
+    //compile project(':kotlin-core')
+    compile 'com.github.lightningkite:kotlin-core:0.3'
+
 }
